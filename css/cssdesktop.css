@@ -1,0 +1,703 @@
+@media only screen and (min-width: 900px) {
+  /* تعديل تصميم الموقع للأجهزة الكبيرة هنا */
+
+body{
+    background-color:#090a2d;
+    color: #bbd5e7;
+    margin: 0%;
+    padding: 0%;
+}
+body {
+  overflow-x: hidden; /* يخفي شريط التمرير الأفقي */
+  margin: 0; /* يزيل الهامش الافتراضي للجسم */
+}
+
+html, body {
+  width: 100%; /* يجعل العرض 100% */
+  height: 100%; /* يجعل الارتفاع 100% */
+}
+
+ 
+  .navbar {
+   
+    overflow: hidden;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #00016a45;
+  }
+
+  .navbar a {
+   
+    flex: 0 0 calc(30% - 40px);
+    color: rgb(255 255 255);
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    border-right: 2px solid rgb(229 230 235);
+    padding: 7px 0px 3px 0px;
+    text-decoration: none;
+}
+
+
+  .navbar a:hover {
+    
+    background-color: #7d7d91;
+    color: rgb(255, 255, 255);
+  }
+
+  .left-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: fixed;
+  
+    top: 28vh;
+    left: 0;
+    height: 33vh;
+    width: 3.2vw;
+    /* padding: 11px; */
+    z-index: 100;
+    /* padding-left: 6px; */
+    
+    box-shadow: 0px 0px 20px 3px rgb(105 89 251 / 50%);
+    
+}
+
+.left-navbar ul{
+
+    
+
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.left-navbar li{
+
+  font-size: 10px;
+    background-color: #fefefebf;
+    padding-left: 1px;
+
+}
+.left-navbar li img{
+  font-size: 10px;
+  height: fit-content;
+  width: 2.2vw;
+  padding-bottom: 15px;
+  padding-left: 0.5vw;
+  padding-top: 0px;
+  transition: all 1s ease;
+}
+.left-navbar li svg{
+
+  font-size: 10px;
+  height: fit-content;
+  width: 2.2vw;
+  padding-bottom: 22px;
+  padding-left: 0.5vw;
+  padding-top: 9px;
+  transition: all 1s ease;
+}
+.left-navbar li img:hover {
+    /* Add styles for the hover effect */
+    /* Example: Increase the size on hover */
+    filter: brightness(1.3);
+    transform: rotate(33deg);
+    /* Example: Increase brightness on hover */
+}
+.left-navbar li svg:hover {
+  /* Add styles for the hover effect */
+  /* Example: Increase the size on hover */
+  filter: brightness(1.3);
+  transform: rotate(33deg);
+  fill: #0030ff;
+  stroke:"green";
+  /* Example: Increase brightness on hover */
+}
+
+.photo_up {
+  
+  background-size:contain; /* يجعل الصورة تغطي كامل الخلفية */
+  background-position: center; /* يوضح موقع الصورة في الخلفية */
+  background-repeat: no-repeat; /* يمنع تكرار الصورة */
+  
+  color: #ffffff;
+  top: 0px;
+ 
+  display: inline-block;
+  z-index: -1;
+  height: 650px;
+  width: 100%;
+
+}
+.color_fix1{
+
+
+  background-size:contain; /* يجعل الصورة تغطي كامل الخلفية */
+  background-position: center; /* يوضح موقع الصورة في الخلفية */
+  background-repeat: no-repeat;
+  background-color: #e5e5e5;
+    z-index: -1;
+    width: 286px;
+    height: 650px;
+
+  position: absolute;
+
+}
+.color_fix2{
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #151515;
+  z-index: -1;
+  width: inherit;
+  margin-left: 1243px;
+  height: 650px;
+  position: absolute;
+}
+.img_up{
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(ahmed_width.png);
+  z-index: -1;
+  width: 1521px;
+  height: 650px;
+  margin-left: 52px;
+  position: absolute;
+}
+
+
+
+
+
+.up_a:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+}
+
+
+.photo_up a{
+  text-decoration: none;
+    margin: 5px;
+    /* --green: #f3e4e4; */
+    padding: 12px 46px;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    font-weight: 900;
+    overflow: hidden;
+    transition: all 0.3s;
+    /* padding-right: 84px; */
+    line-height: 1.4em;
+    margin-right: 25px;
+    border: 2px solid #000000;
+    /* background: linear-gradient(to top, rgb(161 164 253 / 59%) 1%, #ffffffa6 26%,#7b8eeb75 60% , rgb(255 255 255) 100%); */
+    background-color: #f1f1f5;
+    color: #8b3b00;
+    font-style: oblique;
+    font-size: 20px;
+    animation: continuoutext 2s infinite;
+    box-shadow: 9px -4px 0px rgb(21 22 26 / 40%), 0 0 23px 5px rgb(0 0 0 / 64%);
+}
+@keyframes continuoutext {
+  0% {
+   color: #585a65;
+  }
+  50% {
+    color: #0003b8;
+  }
+  100% {
+    color: #585a65;
+  }
+}
+
+.up_a{
+ 
+  margin-top: 6vh;
+  margin-left: 169px;
+  font-weight: 1000;
+}
+.photo_up a:hover{
+
+  
+  font-size: 25px;
+  
+  
+
+}
+.up_text{
+  margin-top: 69px;
+  margin-left: 33px;
+  padding-left: 35px;
+  color: rgb(255 255 255);
+  padding-bottom: 96px;
+  padding-top: 6vh;
+  background-color: #28262640;
+  margin-left: 100px;
+  
+}
+.up_text h2{
+  color: #29221a;
+
+}
+
+.up_text h1{
+
+  margin-right: 50vw;
+  font-size: 2em;
+}
+.up_text p{
+  font-size: 1.3em;
+  width: 48vw;
+}
+.parttwo{
+margin-top: 20px;
+z-index: -2;
+}
+
+
+
+ 
+
+.parttwo{
+
+  margin-top: 142px;
+}
+
+
+
+
+
+
+  .card-person {
+    
+    border: 10px solid #000000;
+    width: 256px;
+    overflow: hidden;
+    box-shadow: 20px 1px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right: 140px;
+    z-index: 9;
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-top: 100px;
+  
+    animation: continuoustr 4s infinite;
+    border-radius: 21% 79% 18% 82% / 70% 35% 65% 30% ;
+    background-color: rgb(0, 0, 0);
+    filter: brightness(.9);
+}
+  
+
+  .card-person img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+   
+  }
+
+
+ 
+  
+  @keyframes continuoustr {
+    0% {
+      transform: scale(1) translateX(0px);
+    }
+    50% {
+      transform: scale(1.1) translateX(-40px);
+    }
+    100% {
+      transform: scale(1) translateX(0px);
+    }
+  }
+
+
+  .card_text{
+    width: 74%;
+    height: 235px;
+    margin-top: 40px;
+    background-color: #68c3cf;
+    
+    color: hwb(256 0% 55%);
+    padding: 30px;
+    text-align: center;
+    font-size: xx-large;
+    border: 2px solid #133af1;
+}
+  
+
+
+.card_text p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666;
+}
+.card p.card_s1 {
+  font-size: 14px;
+}
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 670px;
+  height: 23px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding-right: -19px;
+  background-color: #b2c1de;
+  border-radius: 0px 42px 0 42px;
+}
+
+
+
+.go-arrow {
+  margin-top: 1px;
+  margin-right: 22px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.card{
+
+ 
+  padding-top: 7px;
+}
+.card1 {
+  display: block;
+  position: relative;
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  padding: 32px 24px;
+  margin: 12px;
+  text-decoration: none;
+  height: 349px;
+  z-index: 0;
+  margin-left: 117px;
+  margin-top: 120px;
+  color: black;
+  font-size: larger;
+  font-weight: 1000;
+  overflow: hidden;
+  margin-right: 303px;
+}
+
+
+.card1:before {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: -14px;
+    left: 298px;
+    background: #b2c1de;
+    height: 13px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.4s ease-out;
+}
+
+.card1:hover:before {
+  transform: scale(70);
+}
+
+.card1:hover p {
+  transition: all 0.3s ease-out;
+  color: rgb(0, 0, 0);
+  background-color: #ffffffaf;
+}
+
+.card1:hover h3 {
+  transition: all 0.3s ease-out;
+  color: #ffffff;
+}
+.small{
+  color: #040552;
+    font-size: 1.17em;
+    margin-top: 3vw;
+}
+
+.card3_3 {
+  
+  width: 360px;
+ 
+
+  background: #171717;
+  transition: 1s ease-in-out;
+  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 535px;
+  border: 2px solid #0030ff;
+  margin-bottom: 100px;
+}
+
+.card3_3 span {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 1em;
+}
+
+.card3_3 .info {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 0.82em;
+  margin: 1em;
+  margin-top: 6px;
+  height: 132px;
+}
+
+
+.card3_3 .partthree_im1{
+
+  
+
+  width: 16.8em;
+
+  height: 12.8em;
+  background: rgb(80 39 213);
+ 
+  background-image: url(net.png);
+  background-size:contain; /* يجعل الصورة تغطي كامل الخلفية */
+  background-position: center; /* يوضح موقع الصورة في الخلفية */
+  background-repeat: no-repeat;
+  margin: auto;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  
+}
+
+.card3_3 .img{
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.card3_3  .partthree_im2{
+  
+
+  width: 16.8em;
+  height: 12.8em;
+  background: rgb(255, 255, 255);
+  background-image: url(angular.png);
+  background-size:contain; /* يجعل الصورة تغطي كامل الخلفية */
+  background-position: center; /* يوضح موقع الصورة في الخلفية */
+  background-repeat: no-repeat;
+  margin: auto;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.card3_3  .partthree_im3{
+ 
+  width: 16.8em;
+  height: 12.8em;
+  background: white;
+  background-image: url(laravel.png);
+  background-size:contain; /* يجعل الصورة تغطي كامل الخلفية */
+  background-position: center; /* يوضح موقع الصورة في الخلفية */
+  background-repeat: no-repeat;
+  margin: auto;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.card3_3  .partthree_im4{
+ 
+  width: 16.8em;
+  height: 12.8em;
+  background: white;
+  background-image: url(course_6020_image.png);
+  background-size:contain; /* يجعل الصورة تغطي كامل الخلفية */
+  background-position: center; /* يوضح موقع الصورة في الخلفية */
+  background-repeat: no-repeat;
+  margin: auto;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+
+.card3_3 .share {
+  
+  
+  justify-content: center;
+  gap: 1em;
+  
+  margin-top: 38px;
+  display: flex;
+}
+
+.card3_3 a {
+  color: white;
+  transition: .4s ease-in-out;
+}
+
+.card3_3 a:hover {
+  color: red;
+}
+
+.card3_3 button {
+  padding: 0.8em 1.7em;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  transition: .4s ease-in-out;
+}
+
+.card3_3 button:hover {
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.partthree {
+  display: inline-flex;
+  
+  padding: 120px;
+  margin-left: 67px;
+  margin-top: 170px;
+}
+.cardyy{
+
+  margin-right: 114px;
+  margin-left: 75px;
+}
+
+
+.three_carddy{
+  display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.partfour{
+  background-color: #203857;
+    width: 80%;
+    height: 411px;
+    margin-left: 8vw;
+    margin-bottom: 132px;
+    margin-top: -30px;
+}
+
+.textarea textarea{
+  width: 750px;
+  height: 244px;
+  /* margin-right: 20px 
+px
+; */
+margin-left: 20px;
+
+}
+
+.labeltextarea {
+  padding-top: 1mm;
+    /* padding: 38px; */
+    font-size: 21px;
+    padding-left: 19px;
+
+}
+.buttextarea {
+transition: all 5s ease;
+}
+.buttextarea button{
+  color: #ffffff;
+  position: absolute;
+  /* left: 3px; */
+  width: 235px;
+  border: 2px solid #eeeaff;
+  height: 64px;
+  margin-top: 33px;
+  right: 312px;
+  background-color: #0b0c79;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: italic;
+  transition: all 5s ease;
+}
+.buttextarea :hover{
+  transform: rotate(29deg);
+}
+
+
+  footer .deleted {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+   
+    bottom: 0;
+    width: 100%;
+  }
+
+  .content {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    padding-left: 88px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-section h2 {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .bottom-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+
+
+}
