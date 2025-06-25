@@ -138,6 +138,7 @@ html, body {
         display: block;
         right: 200px;
         bottom: -4px;
+        
 }
 
 .filter_layer {
@@ -575,13 +576,238 @@ z-index: -2;
 
 
 
+
+
+
+
+
+
+
+
+/* CSS */
+.cv-all {
+ 
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+          padding: 30px 0;
+        margin-top: 100px;
+       
+}
+
+.cv-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: transparent;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  max-width: 80%;
+  gap: 20px;
+
+}
+
+.Cv {
+  flex: 1;
+  min-width: 700px;
+          margin-left: 15px;
+   
+
+}
+
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cv-header h1 {
+  color: #fff;
+ background-color: #000;
+  border: 3px solid;
+  border-radius: 3px;
+  padding: 8px 50px;
+  
+}
+
+.cv-button {
+  padding: 12px 24px;
+  background: linear-gradient(38deg, #000, #4146ff);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 12px 3px 16px rgba(0, 0, 0, 0.84);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid;
+  animation: borderColorChange 1s infinite;
+}
+
+.cv-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #0056b3, #4b0082);
+}
+
+.cv-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  width: 100%;
+  height: 450px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icons-around {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+  min-width: 100px;
+  margin-right: -100px;
+  padding-left:101px;
+}
+
+.icon-box {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: scale(1.1);
+}
+
+.icon-box img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+@keyframes borderColorChange {
+  0% { border-color: #fff; }
+  50% { border-color: #146eff; }
+  100% { border-color: #fff; }
+}
+
+
+
+
+
+
+
+
+
+.projects-section {
+  padding: 50px;
+  background-color: #f8f8f8;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #0099ff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  background-color: #007acc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .partfour{
   background-color: #203857;
     width: 80%;
     height: 411px;
     margin-left: 8vw;
     margin-bottom: 132px;
-    margin-top: -30px;
+    margin-top: 30px;
 }
 
 .textarea textarea{
