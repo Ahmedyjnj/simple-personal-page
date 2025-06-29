@@ -9,9 +9,28 @@
    <link rel="stylesheet" type="text/css" href="css/cssmopile.css">
     <!-- Latest compiled and minified CSS -->
     <meta name="keywords" content="personal,page,ahmed,mahmoud,mohamed,elsaghir,information,wep,devlopment">
-</head>
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("s6rwG5dktQymKx60d"); // تحصل عليه من موقع emailjs
+  })();
+
+  
+</script>
+
+
+
+
+
+
+
+
+  </head>
 <body>
-    
+  <script src="js/main.js"></script>
+
     <div class="navbar">
         <a href="#home">home</a>|
         <a href="#services">services</a>|
@@ -134,6 +153,7 @@
       <div class="cv-header">
         <h1>My CV</h1>
         <a class="cv-button" href="https://drive.google.com/file/d/1Zi7-8UMfdozfqDfZ9jm3EK02bx9avPuI/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+         <img  src="icons/download-three-svgrepo-com.svg" alt="Google Drive Icon" style="width: 24px; height: 24px; vertical-align: middle; ">
           Link Drive  
         </a>
       </div>
@@ -168,28 +188,94 @@
 
 
 
-<section class="projects-section">
+<section class="projects-section" id="services">
   <h2>My Projects</h2>
   <div class="projects-container">
 
-    <!-- Project Card 1 -->
-    <div class="project-card">
-      <img src="images/gym-app.png" alt="Gym App">
-      <h3>Gym Management App</h3>
-      <p>Desktop application to manage memberships and sessions using C# and SQL Server.</p>
-      <a href="https://github.com/Ahmedyjnj/GymApp" target="_blank">View Project</a>
+   
+    <div class="project-card" data-project="Api">
+      
+        <button class="prev-btn">&#10094;</button>
+        
+        
+        <div class="slider">
+          <img class="slide-img" src="photos/projects/Api/(3).png" alt="Project Image">
+          
+      </div>
+
+        <button class="next-btn">&#10095;</button>
+
+
+      <h3>talabat-clone-api</h3>
+      <p>ASP.NET Core Web API project for a complete e-commerce backend, implementing clean architecture principles</p>
+      
+      <a href="https://github.com/Ahmedyjnj/talabat-clone-apit" target="_blank">View Project
+        <img src="icons/githup.svg"  width="15px" height="15px"  />
+      </a>
     </div>
 
-    <!-- Project Card 2 -->
-    <div class="project-card">
-      <img src="images/calculator.png" alt="Calculator">
-      <h3>Advanced Calculator</h3>
-      <p>A Windows Forms calculator app with advanced operations.</p>
-      <a href="https://github.com/Ahmedyjnj/CalculatorApp" target="_blank">View Project</a>
+
+
+
+
+
+
+    <div class="project-card" data-project="Gymmanagment">
+      
+        <button class="prev-btn">&#10094;</button>
+        
+        
+        <div class="slider">
+          <img class="slide-img" src="photos/projects/Gymmanagment/(1).png" alt="Project Image">
+        </div>
+
+        <button class="next-btn">&#10095;</button>
+      
+      <h3>Gym Management Desktop App</h3>
+      <p> desktop application built with C# and Entity Framework Core to manage gym subscriptions, attendance, and payments.</p>
+      <a href="https://github.com/Ahmedyjnj/gym-management-Desktop" target="_blank">View Project
+        <img src="icons/githup.svg"  width="15px" height="15px"   />
+      </a>
     </div>
 
-    <!-- Add more cards here -->
-    
+
+
+
+  <div class="project-card" data-project="mvc">
+     <button class="prev-btn">&#10094;</button>
+      <div class="slider">
+         <img class="slide-img" src="photos/projects/mvc/(1).png" alt="Project Image">
+        </div>
+       
+       
+        <button class="next-btn">&#10095;</button>
+      
+      <h3>Mvc IkeaSolutions</h3>
+      <p>ASP.NET MVC web application with authentication identity, and full CRUD operations for Employees and Departments.3-Tier Architecture and the Unit of Work </p>
+      <a href="https://github.com/Ahmedyjnj/Ikeasolution" target="_blank">View Project
+        <img src="icons/githup.svg" width="15px" height="15px"    />
+      </a>
+    </div>
+
+
+
+    <div class="project-card"  data-project="moneymanagment">
+      <button class="prev-btn">&#10094;</button>
+      <div class="slider">
+        <img class="slide-img" src="photos/projects/moneymanagment/(1).png" alt="Project Image">
+        </div>
+        
+        
+        <button class="next-btn">&#10095;</button>
+      
+      <h3>Money managment desktop App</h3>
+      <p> desktop application built with C# and Entity Framework Core to store money payments, track expenses, and generate reports.</p>
+      <a href="https://github.com/Ahmedyjnj/Money-Managment-desktop" target="_blank">View Project
+        <img src="icons/githup.svg" width="15px" height="15px"   />
+      </a>
+    </div>
+
+
   </div>
 </section>
 
@@ -197,23 +283,30 @@
 
 
   
-
-
-  
 <div class="partfour" id="contact">
   <div class="labeltextarea">
-  <h3>write message here </h3>
+    <h3>💬 Write Your Message</h3>
+    <h5>"Your message will reach me on my Email"</h5>
   </div>
-  <div class="textarea">
-  <textarea  name="all text">
-  
-  
-  </textarea>
-  </div>
+
   <div class="buttextarea">
-  <button>send</button>
+    <form id="form">
+      <div class="field">
+        <label for="name">👤 Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="field">
+        <label for="message">📬 Message</label>
+        <input type="text" name="message" id="message" placeholder="Type your message" required>
+      </div>
+
+      <input type="submit" id="button" value="Send Email">
+    </form>
   </div>
-  </div>
+</div>
+
+
 
 
   
@@ -222,9 +315,9 @@
       <div class="footer-section">
         <h2>official pages</h2>
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Mission</a></li>
-          <li><a href="#">freelancing</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Ahmed Mahmoud mohamed elsaghir</a></li>
+          <li><a href="#">Available Now</a></li>
         </ul>
       </div>
       <div class="footer-section">

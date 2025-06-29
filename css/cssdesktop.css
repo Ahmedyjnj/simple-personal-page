@@ -266,6 +266,9 @@ z-index: -2;
 .parttwo{
 
   margin-top: 180px;
+   border-top: 1px solid;
+   border-bottom: 1px solid;
+  animation: borderColorChange 1s infinite;
 }
 
 
@@ -416,166 +419,6 @@ z-index: -2;
 
 
 
-.card3_3 {
-  
-  width: 360px;
- 
-
-  background: #171717;
-  transition: 1s ease-in-out;
-  clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  height: 535px;
-  border: 2px solid #0030ff;
-  margin-bottom: 100px;
-}
-
-.card3_3 span {
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  display: block;
-  font-size: 1em;
-}
-
-.card3_3 .info {
-  font-weight: 400;
-  color: white;
-  display: block;
-  text-align: center;
-  font-size: 0.82em;
-  margin: 1em;
-  margin-top: 6px;
-  height: 132px;
-}
-
-
-.card3_3 .partthree_im1{
-
-  
-
-  width: 16.8em;
-
-  height: 12.8em;
-  background: rgb(80 39 213);
- 
-  background-image: url(net.png);
-  background-size:contain; /* يجعل الصورة تغطي كامل الخلفية */
-  background-position: center; /* يوضح موقع الصورة في الخلفية */
-  background-repeat: no-repeat;
-  margin: auto;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  
-}
-
-.card3_3 .img{
-  margin-bottom: 10px;
-  margin-top: 30px;
-}
-.card3_3  .partthree_im2{
-  
-
-  width: 16.8em;
-  height: 12.8em;
-  background: rgb(255, 255, 255);
-  background-image: url(angular.png);
-  background-size:contain; /* يجعل الصورة تغطي كامل الخلفية */
-  background-position: center; /* يوضح موقع الصورة في الخلفية */
-  background-repeat: no-repeat;
-  margin: auto;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-.card3_3  .partthree_im3{
- 
-  width: 16.8em;
-  height: 12.8em;
-  background: white;
-  background-image: url(laravel.png);
-  background-size:contain; /* يجعل الصورة تغطي كامل الخلفية */
-  background-position: center; /* يوضح موقع الصورة في الخلفية */
-  background-repeat: no-repeat;
-  margin: auto;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-.card3_3  .partthree_im4{
- 
-  width: 16.8em;
-  height: 12.8em;
-  background: white;
-  background-image: url(course_6020_image.png);
-  background-size:contain; /* يجعل الصورة تغطي كامل الخلفية */
-  background-position: center; /* يوضح موقع الصورة في الخلفية */
-  background-repeat: no-repeat;
-  margin: auto;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-
-.card3_3 .share {
-  
-  
-  justify-content: center;
-  gap: 1em;
-  
-  margin-top: 38px;
-  display: flex;
-}
-
-.card3_3 a {
-  color: white;
-  transition: .4s ease-in-out;
-}
-
-.card3_3 a:hover {
-  color: red;
-}
-
-.card3_3 button {
-  padding: 0.8em 1.7em;
-  display: block;
-  margin: auto;
-  border-radius: 25px;
-  border: none;
-  font-weight: bold;
-  background: #ffffff;
-  color: rgb(0, 0, 0);
-  transition: .4s ease-in-out;
-}
-
-.card3_3 button:hover {
-  background: red;
-  color: white;
-  cursor: pointer;
-}
-
-.partthree {
-  display: inline-flex;
-  
-  padding: 120px;
-  margin-left: 67px;
-  margin-top: 170px;
-}
-.cardyy{
-
-  margin-right: 114px;
-  margin-left: 75px;
-}
-
-
-.three_carddy{
-  display: flex;
-    flex-wrap: wrap;
-}
-
-
-
 
 
 
@@ -711,11 +554,27 @@ z-index: -2;
 
 
 
+
+
+
+
+
+
 .projects-section {
   padding: 50px;
-  background-color: #f8f8f8;
+  
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
+
+ 
+   
+   border-bottom: 1px solid;
+  animation: borderColorChange 1s infinite;
+}
+.projects-section h2 {
+   border-top: 1px solid;
+  animation: borderColorChange 1s infinite;
+  padding-top: 20px;
 }
 
 .projects-container {
@@ -723,37 +582,68 @@ z-index: -2;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .project-card {
   background-color: white;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  width: 300px;
+  width: 100%;
+  max-width: 550px;
+  height: 500px;
   padding: 20px;
+  box-sizing: border-box;
   transition: transform 0.3s;
+  position: relative;
+  border: 2px solid #000000;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
 }
 
-.project-card img {
+.slider {
+  position: relative;
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 40px ;
+}
+
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   border-radius: 12px;
 }
 
+.prev-btn, .next-btn {
+  position: absolute;
+  z-index: 5;
+  top: 30%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
 .project-card h3 {
   font-size: 20px;
-  margin: 15px 0 10px;
+  margin: 15px 0 40px;
+  color: #090a2d;
 }
 
 .project-card p {
   font-size: 14px;
   color: #555;
+  margin-bottom: 5px;
 }
 
 .project-card a {
@@ -771,6 +661,12 @@ z-index: -2;
   background-color: #007acc;
 }
 
+/* Responsive */
+@media (min-width: 768px) {
+  .project-card {
+    width: calc(50% - 30px); /* 2 per row with gap */
+  }
+}
 
 
 
@@ -780,74 +676,89 @@ z-index: -2;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.partfour{
+.partfour {
   background-color: #203857;
-    width: 80%;
-    height: 411px;
-    margin-left: 8vw;
-    margin-bottom: 132px;
-    margin-top: 30px;
+  padding: 40px;
+  width: 80%;
+  margin: 110px auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.textarea textarea{
-  width: 750px;
-  height: 244px;
-  /* margin-right: 20px 
-px
-; */
-margin-left: 20px;
-
+.labeltextarea h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+         
 }
 
-.labeltextarea {
-  padding-top: 1mm;
-    /* padding: 38px; */
-    font-size: 21px;
-    padding-left: 19px;
+.field {
+  margin-bottom: 20px;
+}
 
+.field label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #ddd;
 }
-.buttextarea {
-transition: all 5s ease;
+
+.field input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
-.buttextarea button{
-  color: #ffffff;
-  position: absolute;
-  /* left: 3px; */
-  width: 235px;
-  border: 2px solid #eeeaff;
-  height: 64px;
-  margin-top: 33px;
-  right: 312px;
-  background-color: #0b0c79;
-  font-size: 28px;
-  font-weight: 500;
-  font-style: italic;
-  transition: all 5s ease;
+
+input[type="submit"] {
+  background-color: #4460AA;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.buttextarea :hover{
-  transform: rotate(29deg);
+
+input[type="submit"]:hover {
+  background-color: #334c88;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   footer .deleted {
